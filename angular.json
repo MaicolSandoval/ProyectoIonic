@@ -31,7 +31,7 @@
                 "output": "assets"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
+            "styles": ["src/global.scss", "src/theme/variables.scss",],
             "scripts": []
           },
           "configurations": {
@@ -145,4 +145,5 @@
       "setParserOptionsProject": true
     }
   }
+  
 }

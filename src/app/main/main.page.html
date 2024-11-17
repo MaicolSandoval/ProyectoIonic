@@ -1,0 +1,40 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Main</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true" >
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Main</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <ion-content class="ion-padding" >
+    <ion-list>
+      <h3>Inicio de sesión</h3>
+      <p>¡Hola! Me alegro de volver a verte</p>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-input label="Correo" labelPlacement="stacked" [clearInput]="true" placeholder="Ingrese su correo">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Contraseña" placeholder="Ingrese su contraseña ">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button [routerLink]="['/page-inicio']" expand="full" color="danger">Inicio</ion-button>
+    <p>Ingresa con redes</p>
+    <ion-button>Twitter</ion-button> <ion-button color="primary">Facebook</ion-button>
+    <h5 [routerLink]="['/page-register']">¿Olvide mi contraseña?</h5>
+    <h5 [routerLink]="['/page-register']">Registrate</h5>
+  </ion-content>
+  <!-- <ion-button [routerLink]="['/page-register']">Registro</ion-button> -->
+</ion-content>

@@ -11,7 +11,21 @@ import {
   IonLabel, 
   IonInput, 
   IonDatetime, 
-  IonButton 
+  IonButton,
+  IonFabButton, 
+  IonGrid, 
+  IonRow, 
+  IonCol, 
+  IonCard, 
+  IonCardHeader, 
+  IonCardTitle,  
+  IonCardSubtitle, 
+  IonCardContent, 
+  IonMenuButton,
+  IonFooter, 
+  IonButtons, 
+  IonSegment, 
+  IonSegmentButton
 } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 
@@ -32,7 +46,21 @@ import { Router } from '@angular/router';
     IonLabel,
     IonInput,
     IonDatetime,
-    IonButton
+    IonButton,
+    IonFabButton, 
+  IonGrid, 
+  IonRow, 
+  IonCol, 
+  IonCard, 
+  IonCardHeader, 
+  IonCardTitle,  
+  IonCardSubtitle, 
+  IonCardContent, 
+  IonMenuButton,
+  IonFooter, 
+  IonButtons, 
+  IonSegment, 
+  IonSegmentButton
   ]
 })
 export class PageCrearTareasPage {

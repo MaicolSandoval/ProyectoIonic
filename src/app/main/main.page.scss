@@ -1,0 +1,12 @@
+.custom-button {
+    width: 150px; /* Ajusta este valor según sea necesario */
+    height: 50px; /* Ajusta este valor según sea necesario */
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around; /* Opcional: ajusta la disposición de los botones */
+  }
+  

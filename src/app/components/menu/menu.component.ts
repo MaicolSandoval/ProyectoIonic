@@ -6,7 +6,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonInput, IonIcon,
    IonButton, IonItem, IonList,IonMenu,IonMenuButton,IonButtons,IonApp,IonLabel,IonToggle,IonMenuToggle } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
-import { logoIonic, close } from 'ionicons/icons';
+import { logoIonic, close, cog, constructSharp, cogSharp } from 'ionicons/icons';
 
 
 @Component({
@@ -20,7 +20,7 @@ import { logoIonic, close } from 'ionicons/icons';
 export class MenuComponent implements OnInit {
 
   constructor() {
-    addIcons({close}); 
+    addIcons({close,cogSharp,constructSharp,cog}); 
       }
 
   ngOnInit() {

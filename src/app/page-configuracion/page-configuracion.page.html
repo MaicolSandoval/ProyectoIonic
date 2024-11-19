@@ -45,7 +45,7 @@
   <ion-list lines="inset">
     <ion-item>
       <ion-label expand="block" (click)="setOpen(true)">Cambiar Contraseña</ion-label>
-      <ion-modal [isOpen]="isModalOpen">
+      <ion-modal  [isOpen]="isModalOpenC">
         <ng-template>
           <ion-header>
             <ion-toolbar>
@@ -107,60 +107,6 @@
       </ion-range>
     </ion-item>
   </ion-list>
-  </ion-list>
-</ion-list>
-  
- 
-  <ion-list [inset]="true">
-  <ion-item lines="full">
-    <ion-label >Politica</ion-label>
-    <ion-icon name="chevron-down-sharp" slot="end"></ion-icon>
-  </ion-item>
-  <ion-list lines="inset">
-    <ion-item>
-      <ion-label expand="block" (click)="setOpen(true)">Poltica de seguridad</ion-label>
-      <ion-modal [isOpen]="isModalOpen">
-        <ng-template>
-          <ion-header>
-            <ion-toolbar>
-              <ion-title>Poltica de seguridad</ion-title>
-              <ion-buttons slot="end">
-                <ion-button (click)="setOpen(false)">Close</ion-button>
-              </ion-buttons>
-            </ion-toolbar>
-          </ion-header>
-          <ion-content class="ion-padding">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-              reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-              dicta.
-            </p>
-          </ion-content>
-        </ng-template>
-      </ion-modal>
-    </ion-item>
-    <ion-item>
-      <ion-label expand="block" (click)="setOpen(true)">Poltica de manejo de datos</ion-label>
-      <ion-modal [isOpen]="isModalOpen">
-        <ng-template>
-          <ion-header>
-            <ion-toolbar>
-              <ion-title>Poltica de manejo de datos</ion-title>
-              <ion-buttons slot="end">
-                <ion-button (click)="setOpen(false)">Close</ion-button>
-              </ion-buttons>
-            </ion-toolbar>
-          </ion-header>
-          <ion-content class="ion-padding">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-              reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-              dicta.
-            </p>
-          </ion-content>
-        </ng-template>
-      </ion-modal>
-    </ion-item>
   </ion-list>
 </ion-list>
 </ion-content>

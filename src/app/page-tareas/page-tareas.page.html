@@ -19,14 +19,14 @@
       <ion-col size="12">
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-button (click)="cambiarMes(-1)">
-              <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+            <ion-button (click)="cambiarMes(-1)" class="button left-arrow">
+              Mes Anterior
             </ion-button>
           </ion-buttons>
           <ion-title class="ion-text-center">{{ nombreMes }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="cambiarMes(1)">
-              <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+            <ion-button (click)="cambiarMes(1)" class="button right-arrow">
+              Mes Siguiente
             </ion-button>
           </ion-buttons>
         </ion-toolbar>

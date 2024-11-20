@@ -23,13 +23,10 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonInput, IonIcon, IonButt
   IonInputPasswordToggle,
   IonModal,
   IonListHeader,
-  IonRange,
-  IonAlert,
-  IonAccordion,
-  IonAccordionGroup} from '@ionic/angular/standalone';
+  IonRange} from '@ionic/angular/standalone';
 import { RouterLink } from '@angular/router';
 import { addIcons } from 'ionicons';
-import { AlertController} from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -42,8 +39,8 @@ import { AlertController} from '@ionic/angular';
      IonHeader,IonTextarea,IonNote,IonToggle,IonInput, 
      IonTitle,IonSelect,IonSelectOption, 
      IonToolbar,IonInputPasswordToggle,IonModal, 
-     IonFab,IonListHeader,IonRange,IonAlert, 
-     IonFabButton,IonAccordion,IonAccordionGroup,
+     IonFab,IonListHeader,IonRange, 
+     IonFabButton, 
      IonGrid, 
      IonRow, 
      IonCol, 
@@ -96,16 +93,10 @@ export class PageConfiguracionPage implements OnInit {
     document.documentElement.classList.toggle('ion-palette-dark', shouldAdd);
   }
 
-  isModalOpenC = false;
-  isModalOpenP2 = false;
-  isAlertOpen = false;
-  alertButtons = ['Action'];
-
+  isModalOpen = false;
 
   setOpen(isOpen: boolean) {
-    this.isModalOpenC = isOpen;
-    this.isAlertOpen = isOpen;
-    this.isModalOpenP2 = isOpen;
+    this.isModalOpen = isOpen;
   }
 
   async presentAlert() {
@@ -118,9 +109,7 @@ export class PageConfiguracionPage implements OnInit {
     await alert.present();
   }
  
-  
 
-  
   
 
 }

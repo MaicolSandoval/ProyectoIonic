@@ -11,7 +11,7 @@
     </ion-toolbar>
   </ion-header> -->
   <ion-content>
-    <div style="padding: 35px;">
+    <div style="padding: 30px;">
       <ion-list style="padding-bottom: 25px;">
         <h3>Inicio de sesión</h3>
         <p>¡Hola! Me alegro de volver a verte</p>
@@ -35,16 +35,20 @@
           Ingresa con redes
         </ion-label>
       </ion-item>
+
       <ion-item style="padding-bottom: 20px;">
-        <div class="button-container">
-          <ion-button class="custom-button">Twitter</ion-button>
-          <ion-button class="custom-button">Facebook</ion-button>
-        </div>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6" size-md="6" size-lg="6" style="text-align: center;"><ion-button style="--background: #37aafc; --color: #ffffff;" class="custom-button">Twitter</ion-button></ion-col>
+            <ion-col size="6" size-md="6" size-lg="6" style="text-align: center;"><ion-button class="custom-button">Facebook</ion-button></ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-item>
+
       <ion-list>
-        <ion-item style="text-align: center;"> 
-           <ion-label [routerLink]="['/page-register']">¿Olvide mi contraseña?</ion-label> 
-           <ion-label color="danger" [routerLink]="['/page-register']">Registrate</ion-label> 
+        <ion-item style="text-align: center;">
+          <ion-label [routerLink]="['/page-register']">¿Olvide mi contraseña?</ion-label>
+          <ion-label color="danger" [routerLink]="['/page-register']">Registrate</ion-label>
         </ion-item>
       </ion-list>
       <!-- <ion-button>Twitter</ion-button> <ion-button color="primary">Facebook</ion-button> -->

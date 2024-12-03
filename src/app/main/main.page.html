@@ -19,16 +19,16 @@
 
       <ion-list>
         <ion-item>
-          <ion-input label="Correo" labelPlacement="stacked" [clearInput]="true" placeholder="Ingrese su correo">
+          <ion-input label="Correo" labelPlacement="stacked" [clearInput]="true" placeholder="Ingrese su correo"  #campo1 (ionBlur)="onBlurCorreo(campo1)">
           </ion-input>
         </ion-item>
         <ion-item style="padding-bottom: 35px;">
-          <ion-input labelPlacement="stacked" label="Contraseña" placeholder="Ingrese su contraseña ">
+          <ion-input labelPlacement="stacked" label="Contraseña" placeholder="Ingrese su contraseña" #campo2 (ionBlur)="onBlurContrasena(campo2)">
           </ion-input>
         </ion-item>
       </ion-list>
       <ion-list style="padding-bottom: 20px;">
-        <ion-button [routerLink]="['/page-tareas']" expand="full" color="danger">Inicio</ion-button>
+        <ion-button expand="full" color="danger" [disabled]="campo1Error" (click)="navegar()">Inicio</ion-button>
       </ion-list>
       <ion-item style="text-align: center; padding-bottom: 20px;">
         <ion-label>
@@ -39,8 +39,8 @@
       <ion-item style="padding-bottom: 20px;">
         <ion-grid>
           <ion-row>
-            <ion-col size="6" size-md="6" size-lg="6" style="text-align: center;"><ion-button style="--background: #37aafc; --color: #ffffff;" class="custom-button">Twitter</ion-button></ion-col>
-            <ion-col size="6" size-md="6" size-lg="6" style="text-align: center;"><ion-button class="custom-button">Facebook</ion-button></ion-col>
+            <ion-col size="6" size-md="6" size-lg="6" style="text-align: center;"><ion-button style="--background: #37aafc; --color: #ffffff;" class="custom-button"><a href="https://x.com/i/flow/login" style="color: inherit; text-decoration: none;">Twitter</a></ion-button></ion-col>
+            <ion-col size="6" size-md="6" size-lg="6" style="text-align: center;"><ion-button class="custom-button"><a href="https://es-la.facebook.com/login/" style="color: inherit; text-decoration: none;">Facebook</a></ion-button></ion-col>
           </ion-row>
         </ion-grid>
       </ion-item>

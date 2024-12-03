@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "devDependencies": {
-    "@angular/cli": "18.2.12"
-  }
-=======
   "name": "GestorDeTareas",
   "version": "0.0.1",
   "author": "Ionic Framework",
@@ -39,7 +34,7 @@
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.0.0",
+    "@angular-devkit/build-angular": "^18.2.12",
     "@angular-eslint/builder": "^18.0.0",
     "@angular-eslint/eslint-plugin": "^18.0.0",
     "@angular-eslint/eslint-plugin-template": "^18.0.0",
@@ -67,5 +62,4 @@
     "typescript": "~5.4.0"
   },
   "description": "An Ionic project"
->>>>>>> f6578fa0138db6ad997582866b8d9e3e97dea900
 }

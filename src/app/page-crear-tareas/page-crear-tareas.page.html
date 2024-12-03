@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Crear Tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre de la tarea</ion-label>
+      <ion-input [(ngModel)]="nombreTarea" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-datetime [(ngModel)]="fechaTarea" presentation="date" [min]="fechaMinima" max ="2100-12-31"></ion-datetime>
+    </ion-item>
+
+ 
+    <ion-item>
+      <ion-label position="floating">Descripción</ion-label>
+      <ion-input [(ngModel)]="descripcion"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating">Actividades</ion-label>
+      <ion-input [(ngModel)]="actividades"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating">Comportamiento</ion-label>
+      <ion-input [(ngModel)]="comportamiento"></ion-input>
+    </ion-item>
+
+
+
+  </ion-list>
+
+  <ion-button expand="full" (click)="guardarTarea()">Guardar Tarea</ion-button>
+</ion-content>

@@ -1,5 +1,12 @@
 {
   "name": "GestorDeTareas",
+<<<<<<< HEAD
   "integrations": {},
   "type": "angular"
+=======
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+>>>>>>> f6578fa0138db6ad997582866b8d9e3e97dea900
 }

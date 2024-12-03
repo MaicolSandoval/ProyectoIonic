@@ -1,0 +1,39 @@
+<!-- <ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>pageRegister</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <div style="padding: 35px;">
+      <ion-list style="padding-bottom: 25px;">
+        <h3>Registro</h3>
+      </ion-list>
+
+      <ion-list>
+        <ion-item>
+          <ion-input label="Correo" labelPlacement="stacked" [clearInput]="true" placeholder="Ingrese su correo">
+          </ion-input>
+        </ion-item>
+        <ion-item style="padding-bottom: 20px;">
+          <ion-input labelPlacement="stacked" label="Contraseña" placeholder="Ingrese su contraseña ">
+          </ion-input>
+        </ion-item>
+        <ion-item style="padding-bottom: 50px;"> <ion-checkbox slot="start"></ion-checkbox> <ion-label>Acepto los
+            términos de servicio y <br>
+            la politica de privacidad</ion-label> </ion-item>
+      </ion-list>
+      <ion-list style="padding-bottom: 20px;">
+        <ion-button [routerLink]="['/page-tareas']" expand="full" color="danger">Continue</ion-button>
+      </ion-list>
+      <ion-list>
+        <ion-item style="padding-bottom: 20px; text-align: center;"> 
+           <ion-label>¿Tienes una cuenta?</ion-label> 
+           <ion-label color="danger" [routerLink]="['/main']">Iniciar sesión</ion-label> 
+        </ion-item>
+      </ion-list>
+
+    </div>
+  </ion-content>
+</ion-content>

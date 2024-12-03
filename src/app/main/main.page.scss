@@ -1,0 +1,28 @@
+// .custom-button {
+//     width: 150px; /* Ajusta este valor según sea necesario */
+//     height: 50px; /* Ajusta este valor según sea necesario */
+//     --padding-start: 0;
+//     --padding-end: 0;
+//   }
+  
+//   .button-container {
+//     display: flex;
+//     justify-content: space-around; /* Opcional: ajusta la disposición de los botones */
+//   }
+  
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;     /* Centra los botones verticalmente (opcional) */
+   // height: 100vh;           /* Asegúrate de que el contenedor ocupe toda la altura de la vista */
+  }
+  
+  .custom-button {
+    width: 100px; /* Ajusta este valor según sea necesario */
+    height: 45px; /* Ajusta este valor según sea necesario */
+    --padding-start: 0;
+    --padding-end: 0;
+    margin: 0 10px; /* Añade margen entre los botones si es necesario */
+  }
+  
